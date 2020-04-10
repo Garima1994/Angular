@@ -1,0 +1,22 @@
+<!-- Nav Bar -->
+<nav class="navbar navbar-dark bg-primary">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <select class="dropdown" [(ngModel)]="selectedSort" (click)="SortingResult()">
+                <option value="NameAZ">Sort By Name(A-Z)</option>
+                <option value="NameZA">Sort By Name(Z-A)</option>
+                <option value="RankUp">Sort By Rank Up</option>
+                <option value="Rankdown">Sort By Rank Down</option>
+            </select>
+        </div>
+        <div class="col-lg-6">
+            <input type="text" [(ngModel)]="inputusername" placeholder="search by name or rank" />
+            <button class="searchbutton" (click)="searchByName()">
+               <span><i class="fa fa-search"></i></span>
+            </button>
+        </div>
+    </div>
+</div>
+
+</nav>
